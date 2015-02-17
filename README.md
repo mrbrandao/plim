@@ -3,7 +3,7 @@ Plim
 Plim eh um pequeno projeto para automacao em casas, edificios e outros usando Raspberry Pi/Banana Pi/Arduino's, etc...
 
 
-Aqui temos apens um simples Hello World do projeto que faz um led blink pela web no RaspBerry.
+Aqui temos apenas um simples Hello World do projeto que faz um led blink pela web no RaspBerry.
 ~~*Criamos um pyhton(led.py) que usa a API Rpi.GPIO para interagir com o raspberry. Os arquivos php sao apenas para chamar em shell_exec o led.py*~~
 
 <a href="http://pronix.com.br/projs/plim/blink.html"><img src="http://pronix.com.br/plim/img/lamp.png" /></a><br />
