@@ -10,13 +10,9 @@ Pequeno Ajax que ira substituir o ledrpi.php
 <meta charset="UTF-8" />
 
 <script>
-/*Pequeno script para mudar o status da lampada
-apenas alterando o style do background da div*/
-<<<<<<< HEAD:blink.php
-//Fazemos abaixo um innerHTML para chamar o bloco php com shell_exec
-=======
-//Fazemos abaixo um innerHTML para chamar o bloco php com shell_exe
->>>>>>> Ajax support:blink.php
+//Pequeno script para mudar o status da lampada
+//apenas alterando o style do background da div
+//Fizemos abaixo um innerHTML para chamar o bloco php com shell_exec
 window.onload = function blink(){
 	document.getElementById("liga").onclick = function(){
 		//alert("liga");//Apenas para debug
