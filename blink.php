@@ -12,7 +12,11 @@ Pequeno Ajax que ira substituir o ledrpi.php
 <script>
 /*Pequeno script para mudar o status da lampada
 apenas alterando o style do background da div*/
+<<<<<<< HEAD:blink.php
 //Fazemos abaixo um innerHTML para chamar o bloco php com shell_exec
+=======
+//Fazemos abaixo um innerHTML para chamar o bloco php com shell_exe
+>>>>>>> Ajax support:blink.php
 window.onload = function blink(){
 	document.getElementById("liga").onclick = function(){
 		//alert("liga");//Apenas para debug
@@ -40,8 +44,8 @@ div.lamp{
 	background-image:url('img/lamp.png');
 	/*background-size: 150px 100px;*/
 	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 15px 15px; 
+    	background-attachment: fixed;
+    	background-position: 15px 15px; 
 }
 </style>
 </head>
