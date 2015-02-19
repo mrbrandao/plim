@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2 Devices
+  #devices
+    each device in devices
+      div.device(id="device-#{device.id}") #{device.name}
+        input(
+          type='checkbox'
+          id="input-device-#{device.id}"
+          checked=device.on && 'checked'
+        )
+        label(for="input-device-#{device.id}") On
