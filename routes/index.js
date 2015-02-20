@@ -8,4 +8,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Plim', devices: devices });
 });
 
+/* POST Device Toggle */
+router.post('/device/:did/toggle', function(req, res, next) {
+  device = plim.toggleOn(req.params.did);
+  res.json(device);
+});
+
 module.exports = router;
