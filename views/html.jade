@@ -2,8 +2,15 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/scripts/jquery.js')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='/bower_components/jquery/dist/jquery.js')
     script(src='/scripts/main.js')
   body
-    block content
+    header#page-header
+      block header
+        h1= title
+        p Welcome to #{title}
+    main#main-wrapper
+      block main-content
+    footer#page-footer
+      block footer

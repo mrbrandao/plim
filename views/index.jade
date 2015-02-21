@@ -1,15 +1,14 @@
 extends html
 
-block content
-  h1= title
-  p Welcome to #{title}
-  h2 Devices
+block main-content
+  h1 Devices
   #devices
     each device in devices
       div.device(id="device-#{device.id}") #{device.name}
-        input(
-          type='checkbox'
-          id="input-device-#{device.id}"
-          checked=device.on && 'checked'
-        )
-        label(for="input-device-#{device.id}") On
+        span.ui.toggle.checkbox
+          input(
+            type='checkbox'
+            id="input-device-#{device.id}"
+            checked=device.on && 'checked'
+          )
+          label(for="input-device-#{device.id}") On
